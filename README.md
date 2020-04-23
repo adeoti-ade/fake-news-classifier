@@ -7,9 +7,10 @@ This is capstone project required by Udacity to pass the Data Science NanoDegree
 1. [Background](#background)
 3. [Installation](#installation)
 4. [Library Used](#library)
-5. [Project Motivation](#motivation)
+5. [Problem Statement](#statement)
+6. [Problem Questions](#questions)
 6. [File Descriptions](#files)
-7. [Results](#results)
+7. [Conclusion](#conclusion)
 5. [References](#reference)
 
 ## Background <a name="background"></a>
@@ -51,8 +52,17 @@ label: a label that marks the article as potentially unreliable 1: unreliable 0:
 ### test.csv: A testing training dataset with all the same attributes at train.csv without the label.
 
 
-## Results<a name="results"></a>
+## Conclusion<a name="conclusion"></a>
 
+This notebook uses machine learning process to classify fake news. To provide the best model, the researcher made of three set of features to train the model. The model was trained on the NLP pipeline of article title, NLP pipeline of the article content and a set of manual features extracted from the article title and content. 
+
+### Reflection
+
+This project revealed that in order to classify fake news, both the article title and text are good features as they both gave a good precision and recall score. Furthermore, the project also revealed that text features like, number of some part of speech, punctuation counts, word counts, etc. also are good features in classifying fake news. The project however showed that Support Vector Classifier seems to be the best classifier among the classifiers used in this project
+
+### Improvement
+
+This project was created without any hyperparameter tuning. In order to improve the model, one may perform some slight parameter tuning. Also, one may create a pipeline using FeatureUnion to combine the three(3) features and create a single model.
 
 ## References <a name="reference"></a>
 
